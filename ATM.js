@@ -60,19 +60,19 @@
 
 var p= prompt("Enter pKR")
 console.log("User Inputs: ",p);
-var fiveTho = p / 5000 ; //get hundred
+var fiveTho = p / 5000 ; //get five thousand
 console.log("5000 :"+Math.floor(fiveTho))
 
 var fiveTho = p%5000; //left 
 // console.log(lefth)
 
-var oneT = fiveTho / 1000 ; //get hundred
+var oneT = fiveTho / 1000 ; //get thousand
 console.log("1000 :"+Math.floor(oneT))
 
 var oneT = p%1000; //left 
 // console.log(lefth)
 
-var fiveT = oneT / 500 ; //get hundred
+var fiveT = oneT / 500 ; //get five hundred
 console.log("500 :"+Math.floor(fiveT))
 
 var th5 = p%500; //left 
