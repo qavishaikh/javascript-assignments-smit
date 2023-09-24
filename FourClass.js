@@ -114,3 +114,4 @@ if (!isNaN(number)) {
 } else {
     document.write("Invalid input. Please enter a valid number.");
 }
+
