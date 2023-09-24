@@ -96,13 +96,10 @@
 //     document.write("yr data sei enter karoo")
 // }
 
-// Taking input from the user
 var input = prompt("Enter a number:");
 
-// Convert the input to a number
 var number = parseFloat(input);
 
-// Check if the number is positive, negative, or zero
 if (!isNaN(number)) {
     if (number > 0) {
         document.write("The number is positive.");
