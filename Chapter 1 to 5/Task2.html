@@ -1,0 +1,31 @@
+<!-- // Chapter3
+// Task 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Count</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="visit-count">Loading visit count...</p>
+
+    <script>
+        // Check if 'visitCount' is stored in localStorage
+        let visitCount = localStorage.getItem('visitCount');
+
+        // Check if visitCount is null (first visit)
+        if (visitCount === null) {
+            visitCount = 1;
+        } else {
+            visitCount = parseInt(visitCount) + 1;
+        }
+
+        // Store the updated visitCount in localStorage
+        localStorage.setItem('visitCount', visitCount);
+
+        // Display the visit count on the web page
+        document.getElementById('visit-count').textContent = `You have visited this site ${visitCount} times`;
+        alert(visitCount)
+    </script>
+</body>
+</html>
